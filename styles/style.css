@@ -1,5 +1,5 @@
 html {
-
+background: black;
 }
 
 body {
@@ -43,6 +43,7 @@ margin: 0px;
 ul {
   position: absolute;
   top: 20px;
+  font-family: "Montserrat";
 }
 
 li {
@@ -64,7 +65,7 @@ li {
   text-align: center;
   width: 100%;
   text-align: center;
-  
+
 }
 
 .affirmation {
@@ -72,6 +73,19 @@ li {
   margin: 0px;
   font-family: "lato";
   color: gray;
+}
+
+.main {
+  position: absolute;
+  top: 100px;
+}
+
+.videos {
+  text-align: center;
+}
+
+iframe {
+  padding: 20px;
 }
 
 .video1 {
