@@ -43,6 +43,13 @@ margin: 0px;
   z-index: -1;
 }
 
+li:hover {
+  background: black;
+}
+li,a:hover{
+  color: white;
+}
+
 ul {
   position: absolute;
   top: 20px;
@@ -52,6 +59,7 @@ ul {
 li {
   width: 20%;
   display: inline-block;
+  text-align: center;
 }
 
 .i-am-directions {
