@@ -10,3 +10,32 @@ var affirmationContainer = document.querySelector('.affirmation');
 affirmationContainer.innerText = affArray[Math.floor(Math.random()*(10-0)+0)];
 // var name = prompt("hey what's your name?")
 //     alert(name)
+
+
+  var doneButton = document.querySelector(".done-button");
+  // console.log(doneButton);
+  var iAmInput = document.querySelectorAll(".one, .two, .three, .four, .five");
+  console.log(iAmInput);
+  doneButton.addEventListener("click", function(){
+    console.log("Done button works");
+    // console.log(iAmInput.length);
+    for(i = 0; i < iAmInput.length; i++){
+      console.log(iAmInput[i]);
+      if(!iAmInput[i].value.length){
+        console.log(iAmInput[i], " is empty");
+        return alert("You Must fill in all the 'I am' statements to continue")
+      } else {
+        if(iAmInput[4].value.length){
+          var iAmWrapper = document.querySelector(".i-am-wrapper");
+          console.log(iAmWrapper);
+          iAmWrapper.style.display = "none";
+        }
+      }
+    }
+    // if(iAmInput.length){
+    //   console.log("All inputs have stuff");
+    // } else {
+    //   console.log("Inputs are not stuffed");
+    // };
+
+  });
