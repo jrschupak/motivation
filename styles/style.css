@@ -62,6 +62,12 @@ li {
   text-align: center;
 }
 
+@media (max-width: 850px) {
+  li {
+    display: block;
+  }
+}
+
 .i-am-directions {
   padding: 20px;
   padding-top: 5px;
