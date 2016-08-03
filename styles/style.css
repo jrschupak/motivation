@@ -8,6 +8,7 @@ margin: 0px;
 
 .home {
   background-image: url(images/motivation-background.jpeg);
+  background-position: center;
   background-size: cover;
   width: 100%;
 <<<<<<< HEAD
@@ -76,6 +77,12 @@ li {
   width: 20%;
   display: inline-block;
   text-align: center;
+}
+
+@media (max-width: 850px) {
+  li {
+    display: block;
+  }
 }
 
 .i-am-directions {
