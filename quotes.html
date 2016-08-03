@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <title>Quotes</title>
+  <header>
+    <link rel="stylesheet" href="styles/style.css">
+  </header>
+  <body a link="black" vlink="black">
+    <style>
+      html {
+        background-image: url("styles/images/power-pose-mnt.jpeg");
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+    </style>
+    <div class="wrapper-quotes">
+      <div class="navbar">
+        <p class="logo">MOTIVATION</p>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="videos.html">Videos</a></li>
+          <li><a href="quotes.html">Quotes</a></li>
+          <!-- <li>FOUR</li> -->
+        </ul>
+      </div>
+      <div id="quotes-container"><strong>HELLO</strong>
+      </div>
+
+    </div>
+
+    <script id="quotes-template" type="text/x-handlebars-template">
+	      {{#each quotesArr}}
+	      	<strong>{{quote}}</strong>
+          <br><br>
+	      {{/each}}
+  </script>
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
+    <script src="js/quotes.js"></script>
+  </body>
+</html>
